@@ -1,7 +1,30 @@
 body {
-    text-align: center;
-    font: Verdana;
+    font: Verdana; 
     background-color:aliceblue;
     color: black;
 }
 
+.banner {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+nav {
+  /* position: fixed; */
+  text-align: center;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  font-size: 14px;
+
+}
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav a {
+  color: #4A4A4A;
+}
