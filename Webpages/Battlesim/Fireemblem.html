@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Totally Not A Fire Emblem Knockoff</title>
+        <meta charset="utf-8">
+        <link href="../resources/battlesim.css" type="text/css" rel="stylesheet">
+        <form action="fight.html" method="POST">
+            <section class="unit" id="unit">
+                <label for="character1">First unit</label>
+                <input type="text" list="characters" name="character1" id="character">
+                <datalist id="characters">
+                    <option value="princess"></option>
+                    <option value="ogre"></option>
+                    <option value="phoenix"></option>
+                    <option value="generic"></option>
+                </datalist>
+                <label for="level1">Level</label>
+                <input type="number" name="level1" id="level">
+
+            </section>
+            <section id="stats">
+                <input type="number" required name="unit1-hp" id="unit1-hp"> 
+                <input type="number" required name="unit1-sp" id="unit1-sp"> 
+                <input type="number" required name="unit1-str" id="unit1-str"> 
+                <input type="number" required name="unit1-mag" id="unit1-mag"> 
+                <input type="number" required name="unit1-skl" id="unit1-skl"> 
+                <input type="number" required name="unit1-def" id="unit1-def"> 
+                <input type="number" required name="unit1-res" id="unit1-res"> 
+                <input type="number" required name="unit1-luc" id="unit1-luc"> 
+            </section>
+            <section id="skills">
+                <input type="text" required name="unit1-personal" id="unit1-hp" value="none"> 
+                <input type="text" required name="unit1-sk1" id="unit-1" value="none" list="skills"> 
+                <input type="text" required name="unit1-sk2" id="unit-1" value="none" list="skills"> 
+                <input type="text" required name="unit1-sk3" id="unit-1" value="none" list="skills"> 
+                <input type="text" required name="unit1-sk4" id="unit-1" value="none" list="skills"> 
+                <datalist id="skills">
+                    <option value="Str +2"></option>
+                    <option value="Spe +2"></option>
+                    <option value="Lucky Star"></option>
+                    <option value="Entwined Fate"></option>
+                    <option value="Deadly Blade"></option>
+                    <option value="Conqueror's Prescence"></option>
+                    <option value="Executioner"></option>
+
+                </datalist>
+            </section>
+            <section id="support">
+                <label for="bond1">The unit's current bond</label>
+                <input type="text" list="supports" id="support" name="support1">
+                <input type="number" required name="unit1-shared" id="unit-1" value="none"> 
+            </section>
+            
+
+        </form>
+    </head>
+</html>
