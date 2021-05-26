@@ -4,8 +4,9 @@
         <title>Totally Not A Fire Emblem Knockoff</title>
         <meta charset="utf-8">
         <link href="../resources/battlesim.css" type="text/css" rel="stylesheet">
+        <h1 class="banner">Battle Simulator for March Night</h1>
         <form action="fight.html" method="POST">
-            <section class="unit" id="unit">
+            <span class="unit" id="unit">
                 <label for="character1">First unit</label>
                 <input type="text" list="characters" name="character1" id="character">
                 <datalist id="characters">
@@ -15,25 +16,35 @@
                     <option value="generic"></option>
                 </datalist>
                 <label for="level1">Level</label>
-                <input type="number" name="level1" id="level">
+                <input type="number" name="level1" id="level" min="1" max="60">
 
-            </section>
-            <section id="stats">
+            </span>
+            <span id="stats">
+                <!--Todo: Put little tooltips-->
+                <label for="level1">HP</label>
                 <input type="number" required name="unit1-hp" id="unit1-hp"> 
+                <label for="level1">Speed</label>
                 <input type="number" required name="unit1-sp" id="unit1-sp"> 
+                <label for="level1">Strength</label>
                 <input type="number" required name="unit1-str" id="unit1-str"> 
+                <label for="level1">Magic</label>
                 <input type="number" required name="unit1-mag" id="unit1-mag"> 
+                <label for="level1">Skill</label>
                 <input type="number" required name="unit1-skl" id="unit1-skl"> 
+                <label for="level1">Defense</label>
                 <input type="number" required name="unit1-def" id="unit1-def"> 
+                <label for="level1">Resistance</label>
                 <input type="number" required name="unit1-res" id="unit1-res"> 
+                <label for="level1">Luck</label>
                 <input type="number" required name="unit1-luc" id="unit1-luc"> 
-            </section>
-            <section id="skills">
-                <input type="text" required name="unit1-personal" id="unit1-hp" value="none"> 
-                <input type="text" required name="unit1-sk1" id="unit-1" value="none" list="skills"> 
-                <input type="text" required name="unit1-sk2" id="unit-1" value="none" list="skills"> 
-                <input type="text" required name="unit1-sk3" id="unit-1" value="none" list="skills"> 
-                <input type="text" required name="unit1-sk4" id="unit-1" value="none" list="skills"> 
+            </span>
+            <span id="skills">
+                
+                <input type="text" required name="unit1-personal" id="unit1-personal"> 
+                <input type="text" required name="unit1-sk1" id="unit1-sk1"  list="skills"> 
+                <!-- <input type="text" required name="unit1-sk2" id="unit1-sk2" value="none" list="skills"> 
+                <input type="text" required name="unit1-sk3" id="unit1-sk3" value="none" list="skills"> 
+                <input type="text" required name="unit1-sk4" id="unit1-sk4" value="none" list="skills">  -->
                 <datalist id="skills">
                     <option value="Str +2"></option>
                     <option value="Spe +2"></option>
@@ -44,11 +55,16 @@
                     <option value="Executioner"></option>
 
                 </datalist>
-            </section>
+            </span>
             <section id="support">
                 <label for="bond1">The unit's current bond</label>
                 <input type="text" list="supports" id="support" name="support1">
-                <input type="number" required name="unit1-shared" id="unit-1" value="none"> 
+                <datalist id="supports">
+                    <option value="supp1"></option>
+                    <option value="supp2"></option>
+                    <option value="supp3"></option>
+                </datalist>
+                <!-- <input type="number" required name="unit1-shared" id="unit-1" value="none">  -->
             </section>
             
 

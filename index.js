@@ -1,5 +1,0 @@
-window.alert('Hello World');
-
-
-
-
