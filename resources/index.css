@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'OverpassBanner';
-  src:unset
-       url('../resources/fonts/Overpass/Overpass-ExtraBold.ttf') format('truetype');
+  src: url('../resources/fonts/Overpass/Overpass-ExtraBold.ttf') format('truetype');
+  font-family:  'OverpassRegular';
+  src: url('../resources/fonts/Overpass/Overpass-Regular.ttf') format('truetype');
 }
 
 /* css */
 html {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "OverpassRegular";
   background-color: #242682;
 }
 
 body {
-    font: Verdana; 
     color: aliceblue;
 }
 
 
 .banner {
     background-color: #242682;
-    font-family:'OverpassBanner';
-    padding: 20px;
+    font-family: "OverpassBanner";
+    padding: 5px;
 }
 
 footer {
@@ -28,9 +28,10 @@ footer {
   padding: 20px;
 }
 
-nav {
+.navigation {
+  align-items: center;
   /* position: fixed; */
-  text-align: center;
+  height: 100px;
   top: 0;
   width: 100%;
   padding: 20px 0;
@@ -38,13 +39,10 @@ nav {
 
 }
 nav li {
-  align-items: center;
   display: inline-block;
-  text-decoration: none;
   font-size: 20px;
   font-weight: 600;
   width: 15rem;
-  height: 4em;
   padding: 10px;
   border: 3px solid #15164d;
   background-color: #2F2FA2;
@@ -141,8 +139,17 @@ nav a {
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #99738E;
+}
+.quote q{
+  color: white;
 }
 
+.quotepic{
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
 .content {
   text-align: center;
   width: 70%;
