@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Current Programming Projects</title>
+    <title>About Me</title>
     <link href="./about.css" type="text/css" rel="stylesheet">
     </head>
     <header>
-
+        <div class="headerquote">
+        </div>
         <div class="topnav">
-            <a class="active" href="../index.html">Home</a>
             <a href="./game.html">DevLog</a>
             <a href="./data.html">Data Science</a>
-            <img src="../resources/images/Logo.png"> 
+            <a href="../index.html"><img class="logo" src="../resources/images/Logo.png"> </a>
             <a href="./gallery.html">Art Gallery</a>
-            <a href="./about.html">About Me</a>
-
+            <a class="active" href="./about.html">About Me</a>
           </div>
+        <div class="contacts">
+            <a href='mailto:marcus.a.chung@gmail.com' target="_blank"><img class="contimg" src="../resources/images/email.png"></a>
+            <a href="https://www.instagram.com/marcchu9/" target="_blank"><img class="contimg" src="../resources/images/insta.png"></a>
+            <a href="https://github.com/marcus-aurel-chung" target="_blank"><img class="contimg" src="../resources/images/github.png"></a>
+            <a href='https://www.linkedin.com/in/uoftmarcuschung/' target="_blank"><img class="contimg" src="../resources/images/linkedin.png"></a>
+        </div>
     </header>
     <body>
+        <section class="banner">
+            <h1>About Me</h1>
+            <img src="../resources/images/flower.png">
+        </section>
         <section class="intro">
-            <p> Hello! I'm Marcus Chung. I'm a second year Engineering Science student at the University of Toronto, looking to join the Biomedical Engineering stream and eventually get accepted into Med School.</p>
-            <p>Helping others has been a really important part of my life since I was young, and throughout highschool I did a lot of volunteering with elderly patients in Hospitals and Care Centers. Especially given how Alzheimer's is really prevalent in my family, I want to become a Psychiatrist to aid the people I care about. Right now I'm looking for research oppurtunities that will help me do that, or internships that allow me to use my data science skills.</p>
-            <div class="skills">
-              <h4>Skill Summary</h4>
-              <ul>
-                <li>Experienced in data organization, analysis, and visualization with tools like excel, python (pandas, matplotlib, etc), and SQL.</li>
-                <li>Experienced with Web Design using HTML, css, and Javascript. (If you're reading this you're on my website)</li>
-                <li>Solo game developer and pixel artist.</li>
-                <li>Experienced with Machine Learning and NLP using python</li>
-              </ul>
-            </div>
-            <p>For some more information on my game development/data science adventures, take a look at their respective pages. </p>
-            <p>In my free time I also enjoy playing instruments, cooking and baking, and going on bike rides around Toronto.</p>
             <div>
-                <img src="../resources/images/cat.jpg" class="cat">
-                <p>Hecate</p>
+                <p>Hello! My name is Marcus Chung and I'm a second year Engineering Science student at the University of Toronto. I have a keen interest in both psychiatry and data science, and am looking for ways to combine the two. During high school, I volunteered a lot in hospitals and elderly care centers and got to hear from a lot of patients about how their illness affected their lives. I ended up continuing to read book and listen to podcasts about mental illnesses and psychiatry grew into an area I became very invested in, especially as diseases like Alzheimer's are very common in my family. A particular topic I'm interested in is using data to dispel or correct past misinformation and stereotypes about mental conditions. I'm currently looking for research oppurtunities</p>
+                <p>As for other projects, I'm currently trying to make my own game. Growing up, I loved stories. I spent much of my time playing video games, reading books, and volunteering at places where I could talk to new people, and hear about their lives. Making my own stories has been a dream of mine for a long time, and the first chapters start now.</p>
             </div>
-            
+            <div>
+                <img class="self" src="../resources/images/self.png">
+            </div>
         </section>
-        <section class="contact">
-            <h2 id='contacts' class="contacts"> Contact Information:</h2>
-            <p>Email: <a href='mailto:marcus.a.chung@gmail.com' target="_blank">marcus.a.chung@gmail.com</a></p>
-            <p>LinkedIn: <a href='https://www.linkedin.com/in/uoftmarcuschung/' target="_blank">https://www.linkedin.com/in/uoftmarcuschung/</a></p>
-            <p>Github: <a href="https://github.com/marcus-aurel-chung" target="_blank">https://github.com/marcus-aurel-chung</a> </p>
-
-
+        <section class="skills">
+            <h2 class="skilltitle">Skill Summary</h2>
+            <div class="data">
+                <img src="../resources/images/graph.png">
+                <p>Experienced with organizing, analyzing and visualizing data with Python, SQL, and R.</p>
+            </div>
+            <div class="website">
+                <img src="../resources/images/512px-HTML5_logo_and_wordmark.svg.png">
+                <p> Website design with HTML and css.</p>
+            </div>
+            <div class="gamedev">
+                <img src="../resources/images/unity.png">
+                <p> Beginner game developer and pixel artist. (Check out my 2 separate tabs for more on these.)</p>
+            </div>
+            <div class="python">
+                <img src="../resources/images/python-logo.png">
+                <p> Experienced in using Python and TensorFlow for machine learning models and NLP.</p>
+            </div>
         </section>
+        <div class="catpic">
+            <img class="cat" src="../resources/images/cat.jpg" >
+            <div class="hobbies">
+                <p>I also love cooking and baking, riding my Raleigh Grand Prix around Toronto, and my cat, Hecate!</p>
+                <img class="arrow" src="../resources/images/arrow.png">
+                <p>Hecate in his tunnel.</p>
+            </div>
+        </div>
     </body>
+    <footer>
+        <p>It Ends With A - 2022</p>
+    </footer>
 </html>
